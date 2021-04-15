@@ -1,0 +1,30 @@
+Assignment-1
+1) write the defination of tuple with a proper example?
+	 A tuple refers to a collection of objects in python which are ordered and can not be changed.
+  The python objects here may be strings,lists,tuples,integers etc.
+Characteristics of tuples-
+     1. Insertion order is preserved: The order in which elements are added to the tuple is the order in which the output will be displayed.
+     2. Immutable
+     3. Tuple can store duplicate
+     4. Tuple can store the same type of objects and different type of objects as well.
+     5. Index plays the main role in tuple
+     6. We can create a tuple by using parenthesis () symbol and  also optional and recommended to use.
+     7. Every object should be separated by comma as a separator.  	
+
+
+2)write the code for implementing sub dictionary inside dictionary?
+
+D = {'emp1': {'name': 'Bob', 'job': 'Mgr'},     'emp2': {'name': 'Kim', 'job': 'Dev'},'emp3': {'name': 'Sam', 'job': 'Dev'}}
+
+IDs = ['emp1','emp2','emp3']
+
+EmpInfo = [{'name': 'Bob', 'job': 'Mgr'},{'name': 'Kim', 'job': 'Dev'},{'name': 'Sam', 'job': 'Dev'}]
+
+D = dict(zip(IDs, EmpInfo))
+
+print(D['emp1']['name'])
+# Prints Bob
+
+print(D['emp2']['job'])
+# Prints Dev
+print(D)
